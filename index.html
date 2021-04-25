@@ -1,0 +1,155 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+</script>
+<head>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<div class="container">
+  <div class="header-pic">
+    <img src="https://ih1.redbubble.net/image.1366463948.0368/raf,750x1000,075,t,FFFFFF:97ab1c12de.jpg" alt="Picture of cartoon cars.">
+  </div>
+
+  <header class="header form-group">
+    <h1 id="title">Car Owner Survey Form</h1>
+    <p id="description">This short questionnaire is about your car and driving experience.</p>
+  </header>
+  <form id="survey-form" class="container">
+    <div class="form-group">
+      <label for="name" id="name-label">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div> <!-- Name -->
+
+    <div class="form-group">
+      <label for="email" id="email-label">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="form-control"
+        placeholder="Enter your email"
+        required
+      />
+    </div> <!-- Email -->
+
+    <div class="form-group">
+      <label for="number" id="number-label">Age:</label>
+      <input
+        type="number"
+        id="number"
+        name="age"
+        class="form-control"
+        min=10
+        max=100
+        placeholder="Enter your age"
+      />
+    </div> <!-- Age -->
+
+    <div class="form-group">
+      <p>What is the make of your car?</p>
+      <select id="dropdown" name="car-make" class="form-control" required>
+        <option disabled selected value>Select the make of your car</option>
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="Ford">Ford</option>
+        <option value="Honda">Honda</option>
+        <option value="Jeep">Jeep</option>
+        <option value="Mazda">Mazda</option>
+        <option value="Mercedes-Benz">Mercedes-Benz</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Subaru">Subaru</option>
+        <option value="Toyota">Toyota</option>
+        <option value="other">Other</option>
+      </select>
+    </div> <!-- Car Make -->
+
+    <div class="form-group">
+      <p>What is the year of your car?</p>
+      <select id="car-year" name="car-year" class="form-control" required>
+        <option disabled selected value>Select the year of your car</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010 or earlier">2010 or earlier</option>
+      </select>
+    </div> <!-- Car Year -->
+
+    <div class="form-group">
+      <p>What is the vehicle type of your car?</p>
+      <label>
+        <input
+          name="vehicle-type"
+          value="sedan"
+          type="radio"
+          class="input-radio"
+          checked
+        >Sedan</label>
+      <label>
+        <input
+          name="vehicle-type"
+          value="SUV"
+          type="radio"
+          class="input-radio"
+        >SUV</label>
+
+      <label>
+        <input
+          name="vehicle-type"
+          value="coupe"
+          type="radio"
+          class="input-radio"
+        >Coupe</label>
+      <label>
+        <input
+          name="vehicle-type"
+          value="Pickup Truck"
+          type="radio"
+          class="input-radio"
+        >Pickup Truck</label>
+      <label>
+        <input
+          name="vehicle-type"
+          value="Hatchback"
+          type="radio"
+          class="input-radio"
+        >Hatchback</label>
+    </div> <!-- Vehicle Type -->
+
+    <div class="form-group">
+      <p>What are your favorite features of your car?</p>
+
+      <label>
+        <input type="checkbox" id="backup-camera" value="backup-camera" name="backup-camera">Backup Camera</label>
+      <label><input type="checkbox" id="remote-start" value="remote-start" name="remote-start">Remote Start</label>
+      <label><input type="checkbox" id="moonroof" value="moonroof" name="moonroof">Moonroof</label>
+      <label><input type="checkbox" id="climate control" value="climate-control" name="climate-control">Climate Control</label>
+      <label><input type="checkbox" id="keyless-entry" value="keyless-entry" name="keyless-entry">Keyless Entry</label>
+    </div> <!-- Favorite features -->
+
+    <div class="form-group">
+      <p>Comments</p>
+      <textarea id="comments" name="comments" placeholder="Enter your comments here...">
+      </textarea>
+    </div> <!-- New features -->
+
+    <div class="form-group">
+      <button type="submit" id="submit"><b>Submit</b></button>
+    </div> <!-- Submit -->
+  </form>
+</div>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
